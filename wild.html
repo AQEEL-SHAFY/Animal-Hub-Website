@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/pet.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+ 
+
+
+
+<div class="pet">
+    <p>WILD</p>
+</div>
+
+
+  <div class="petImg">
+    <img src="Images/dear.png"  onclick="openModal();currentSlide(1)" >
+    <span class="cat">
+        <div class="catImg">
+
+    <img src="Images/elephant.png"  onclick="openModal();currentSlide(2)" >
+  
+</div>
+<div class="catBtn">
+    <a href="gallery.html"><button class="btn">PREVIOUS</button></a>
+</div>
+</span>
+    <img src="Images/rhino.png" onclick="openModal();currentSlide(3)" >
+  </div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/dear.png" >
+      <p><b>Deer</b><br><br>Size : 25cm x 35cm<br>Original : 45$ (framed)
+        <br>Deer are the only group of animals in the world to have antlers. Antlers are the fastest growing living tissue in the world! </p>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/elephant.png"   >
+      <p><b>African Elephant</b><br><br>Size : 35cm x 50cm<br>Original : 45$ (framed)
+        <br>The African elephant is a genus comprising two living elephant species, the African bush elephant and the smaller <br>African forest elephant. Both are social herbivores with grey skin, but differ in<br> the size and colour of their tusks and in the shape and size of their ears and skulls.</p>
+      </div>
+  
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images/rhino.png" >
+      <p><b>Rhinoceros</b><br><br>Size : 25cm x 35cm<br>Original : 55$ (framed)
+        <br>A Rhinoceros, commonly abbreviated to rhino, is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae. Two of the extant species are native to Africa, and three to South and Southeast Asia.</p>
+      </div>
+  
+    
+ 
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+      
+     
+  </div>
+</div>
+
+<script src="script/wild.js"></script>
+
+  
+
+
+    <footer class="footer">
+        <div class="footerLogo">
+            <img src="Images/LOGO.png" alt="">
+        </div>
+        <div class="social">
+            <a href="#"><img src="Images/whatsapp.png" alt=""></a>
+            <a href="www.instagram.com"><img src="Images/instagram.png" alt=""></a>
+            <a href="www.facebook.com"><img src="Images/facebook.png" alt=""></a>
+            <a href="www.youtube.com"> <img src="Images/youtube.png" alt=""></a>
+
+        </div>
+        <h3><i class="fa fa-copyright" aria-hidden="true"></i>2021 By Animal Hub. All Rights reserved.</h3><br>
+    </footer>
+
+</body>
+
+</html>

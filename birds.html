@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/pet.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+ 
+
+
+
+<div class="pet">
+    <p>BIRDS</p>
+</div>
+
+
+  <div class="petImg">
+    <img src="Images/peacock.png"  onclick="openModal();currentSlide(1)" >
+    <span class="cat">
+        <div class="catImg">
+
+    <img src="Images/bir.png"  onclick="openModal();currentSlide(2)" >
+  
+</div>
+<div class="catBtn">
+    <a href="gallery.html"><button class="btn">PREVIOUS</button></a>
+</div>
+</span>
+    <img src="Images/owl.png" onclick="openModal();currentSlide(3)" >
+  </div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/peacock.png" >
+      <p><b>Peacock</b><br><br>Size : 25cm x 35cm<br>Original : 45$ (framed)
+        Peacocks are ground-feeders that eat insects, plants, and small creatures. There are two familiar peacock species.<br>The blue peacock lives in India and Sri Lanka, while the green peacock is found in <br>Java and Myanmar (Burma). A more distinct and little-known species, the Congo peacock,<br> inhabits African rain forests.</p>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/bir.png"   >
+      <p><b>Finches</b><br><br>Size : 35cm x 50cm<br>Original : 45$ (framed)
+        <br>The true finches are small to medium-sized passerine birds in the family Fringillidae. Finches have stout conical<br> bills adapted for eating seeds and nuts and often have colourful plumage. They <>occupy a great range of habitats where they are usually resident and do not migrate.</p>
+      </div>
+  
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images/owl.png" >
+      <p><b>Owl</b><br><br>Size : 25cm x 35cm<br>Original : 55$ (framed)
+        <br>Owls are birds from the order Strigiformes, which includes over 200 species of mostly solitary and nocturnal birds <br>of prey typified by an upright stance, a large, broad head, binocular vision, <br>binaural hearing, sharp talons, and feathers adapted for silent flight.</p>
+      </div>
+  
+    
+ 
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+      
+     
+  </div>
+</div>
+
+<script src="script/birds.js"></script>
+  
+
+
+    <footer class="footer">
+        <div class="footerLogo">
+            <img src="Images/LOGO.png" alt="">
+        </div>
+        <div class="social">
+            <a href="#"><img src="Images/whatsapp.png" alt=""></a>
+            <a href="www.instagram.com"><img src="Images/instagram.png" alt=""></a>
+            <a href="www.facebook.com"><img src="Images/facebook.png" alt=""></a>
+            <a href="www.youtube.com"> <img src="Images/youtube.png" alt=""></a>
+
+        </div>
+        <h3><i class="fa fa-copyright" aria-hidden="true"></i>2021 By Animal Hub. All Rights Reserved.</h3><br>
+    </footer>
+
+</body>
+
+</html>

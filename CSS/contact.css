@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CBC7B0;
+  }
+  nav{
+    padding-top:0px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(250, 235, 215, 0.178);
+  }
+
+  .logo{
+      position: fixed;
+      top:1.5%;
+      left: 15%;
+  }
+  .logo img{
+    height:65px;
+    width: 90px;
+  }
+
+ 
+  nav ul{
+    text-align: center;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #4A4944;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 7px 13px;
+   
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  a.active,a:hover {
+    color: #000000;
+    transition: .5s;
+    font-size: 24px;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .btn{
+      display: flex;
+      
+  }
+   
+  .contactForm{
+    padding: 100px 200px;
+   
+
+}
+.nameEmail img{
+    position: absolute;
+    margin-top: 1%;
+    
+    height: 500px;
+    z-index: -1;
+    width:630px ;
+}
+#name{
+    width: 610px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border:2px solid #CBC7B0;
+    background-color: #CBC7B0;
+    padding: 10px;
+}
+#email{
+    width: 610px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border:2px solid #CBC7B0;
+    background-color: #CBC7B0;
+    padding: 10px;
+}
+#subject{
+    margin-left: 10px;
+    width: 610px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border:2px solid #CBC7B0;
+    background-color: #CBC7B0;
+    padding: 10px;
+}
+#details{
+    margin-left: 10px;
+    width: 610px;
+    border:2px solid #CBC7B0;
+    background-color: #CBC7B0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+::placeholder{
+    color: #000000;
+    font-family: 'Montserrat';
+}
+.reset{
+    background-color: #ADA999;
+    padding: 6px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+    color: #fff;
+    font-family: 'Rajdhani';
+    border: none;
+}
+
+.send{
+    background-color: #ADA999;
+    padding: 6px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 459px;
+    margin-right: 10px;
+    color: #fff;
+    font-family: 'Rajdhani';
+    border: none;
+}
+.send:hover , .reset:hover{
+    background-color: #72716c;
+    color: #fff;
+}
+
+.contactSec{
+    display: flex;
+
+}
+
+.phoneLeft{
+    display: flex;
+    
+}
+.conatctRight{
+    margin-top: 200px;
+    
+
+}
+.phoneNum{
+    margin-left: 15px;
+    
+    
+    
+}
+.phoneNum h3{
+    margin-top: 15px;
+}
+
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+        
+       
+    }
+    .social img{
+        border-radius: 100px;
+        padding: 10px;
+    
+       
+    }
+    
+    .footer h3{
+        text-align: center;
+        margin-top: 10px;
+      
+    }
+    .footer img{
+        display: block;
+        margin: auto;
+        height: 60px;
+      
+     }
+    
+     .footer{
+         margin-top: 100px;
+         background-color:#A79E9E ;
+         padding-top: 10px;
+         margin-bottom: 0;
+     }
+
+
+
+     @media (max-width: 1024px){
+        .logo{
+          font-size: 30px;
+          padding-left: 1px;
+        }
+        nav ul li a{
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+      @media (max-width: 1024px){
+        .checkbtn{
+          display: block;
+          
+        }
+        ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: rgba(20, 22, 29, .9);
+          font-weight: bold;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+        nav ul li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a{
+          color: #fff;
+          font-size: 20px;
+          font-weight: lighter;
+        }
+        a.active,
+        a:hover {
+            background: none;
+            font-weight: bolder;
+            
+            font-size: 24px;
+        }
+      
+        #check:checked~.links ul {
+            left: 0;
+        }
+        .contactSec{
+            display: block;
+           
+        
+        }
+     
+        .contactForm{
+            padding: 100px 200px;
+           
+        
+        }
+        .nameEmail img{
+            position: absolute;
+            margin-top: -2%;
+            margin-left: -34%;
+            height: 550px;
+            z-index: -1;
+            width:403px ;
+        }
+        
+        .phoneLeft{
+            display: block;
+            
+          }
+          .nameEmail{
+            margin-top: -130px;
+            display: block;
+            
+          }
+          #name,#email{
+             
+            width: 360px;
+            margin-bottom: 10px;
+            margin-left: -145px;
+            height: 40px;
+            border-radius: 5px;
+           
+            padding: 10px;
+          }
+          #subject{
+            margin-left: -145px;
+            width: 360px;
+            height: 40px;
+            margin-top: 15px;
+            border-radius: 5px;
+           
+            padding: 10px;
+        }
+        #details{
+            margin-left: -145px;
+            width: 360px;
+         
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .send{
+           
+            padding: 6px 25px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 52px;
+            color: #fff;
+            font-family: 'Rajdhani';
+            border: none;
+        }
+          .contactSec{
+            flex-direction: column-reverse;
+            margin-top: 150px;
+          
+          }
+          .conatctRight{
+            margin-bottom: 20px;
+            margin-top: -50px;
+            
+          
+          }
+          .phoneNum{
+            
+            margin-left: 200px;
+            
+            
+            
+          }
+          .phone {
+              margin-top: 50px;
+              margin-left: 100px;
+          }
+          .phoneNum h3{
+            margin-top: -55px;
+          }
+        }
+     
+
+    
+    
